@@ -1,0 +1,15 @@
+
+<div class="card mb-4 box-shadow">
+  <img class="card-img-top" src="{{productItem.imagePath }}" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-title">{{productItem.name}}</p>
+    <p class="card-text"><strong>Rs. {{productItem.price}}</strong></p>
+    <p class="card-text">{{productItem.description}}</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+        <button type="button" class="btn btn-sm btn-primary product-btn" (click)="AddToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

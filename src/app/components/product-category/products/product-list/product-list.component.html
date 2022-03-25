@@ -1,0 +1,8 @@
+
+<div class="row">
+  <!-- <input [(ngModel)] = "searchTerm" (ngModelChange) = "search()"/> -->
+<div class="col-md-4" *ngFor="let product of productList ">
+  <app-product-item [productItem] = "product"></app-product-item>
+</div>
+</div>
+
