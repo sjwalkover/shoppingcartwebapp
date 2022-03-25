@@ -1,7 +1,11 @@
 
 <div class="row">
-  <!-- <input [(ngModel)] = "searchTerm" (ngModelChange) = "search()"/> -->
-<div class="col-md-4" *ngFor="let product of productList ">
+  <div class="form">
+    <i class="fa fa-search"></i>
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&nbsp;&nbsp;Start searching for a Products">
+  </div>
+  <br>
+<div class="col-md-4 pt-3" *ngFor="let product of productList | filter:searchText ">
   <app-product-item [productItem] = "product"></app-product-item>
 </div>
 </div>

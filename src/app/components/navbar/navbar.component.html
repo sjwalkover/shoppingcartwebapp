@@ -5,15 +5,13 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> &nbsp;&nbsp;
-      <app-search-bar></app-search-bar>
+      <!-- <app-search-bar></app-search-bar> -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <!-- <li class="nav-item active">
-            <a routerLink="/" class="nav-link">Products </a>
-          </li> -->
-        
+
+
           <li class="nav-item">
-            <a routerLink="/cart" class="nav-link"> <span matBadge="0" matBadgeOverlap="false"><i class='fa fa-cart-plus' style='color: white;font-size:28px'></i> </span></a>
+            <a routerLink="/cart" class="nav-link"> <span matBadge="{{cartqty}}" matBadgeOverlap="false"><i class='fa fa-cart-plus' style='color: white;font-size:28px'></i> </span></a>
           </li>
         </ul>
       </div>

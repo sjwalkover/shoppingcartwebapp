@@ -8,6 +8,7 @@ import { Product } from 'src/app/components/product-category/products/product.mo
 })
 export class ProductListComponent implements OnInit {
   productList: Product[] = []
+  searchText:any;
   constructor(private ProductService:ProductService) { }
 
   ngOnInit(): void {

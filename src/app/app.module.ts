@@ -15,7 +15,7 @@ import {MatChipsModule} from '@angular/material/chips';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule} from '@angular/material/button';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
+
 import { ProductCategoryComponent } from './components/product-category/product-category.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,14 +23,14 @@ import { ProductService } from './components/product-category/products/products.
 import { ProductListComponent } from './components/product-category/products/product-list/product-list.component';
 import { ProductItemComponent } from './components/product-category/products/product-list/product-item/product-item.component';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
-
+// search module
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 @NgModule({
   declarations: [
     AppComponent,
     CartComponent,
     NavbarComponent,
     ProductsComponent,
-    SearchBarComponent,
     ProductCategoryComponent,
     ProductListComponent,
     CartComponent,
@@ -45,6 +45,7 @@ import { CartItemComponent } from './components/cart/cart-item/cart-item.compone
     MatBadgeModule,
     FormsModule,
     ReactiveFormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

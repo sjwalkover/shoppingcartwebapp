@@ -9,10 +9,11 @@ import { Product} from './product.model';
 
   )
   export class ProductService {
+    searchText: any;
     products = [
     {id: 1, name: 'Adidas Stan Smith', price: 1000.0,  description: 'very good shoes',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
-    {id: 2, name: 'Nike Air Max', price: 300.0,  description: 'very good shoes',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
-    {id: 3, name: 'Nike Air Max', price: 200.0,  description: 'good shoes',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
+    {id: 2, name: 'Nike Air Max', price: 300.0,  description: 'very good shoes',imagePath:'https://media.istockphoto.com/photos/sport-shoes-on-isolated-white-background-picture-id956501428?k=20&m=956501428&s=612x612&w=0&h=UC4qdZa2iA0PJvv0RIBlJDyF80wxFyLPq4YWvZa30Sc='},
+    {id: 3, name: 'Nike ', price: 200.0,  description: 'good shoes',imagePath:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&w=1000&q=80'},
     {id: 4, name: 'Nike Air Max', price: 130.0,  description: 'puma shoes',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
     {id: 5, name: 'Reebok Sweat Shirt', price: 45.0, category: 'Clothes', description: '',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
     {id: 6, name: 'Puma T-Shirt', price: 30.0,  description: 'branded clothes',imagePath:'https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI='},
