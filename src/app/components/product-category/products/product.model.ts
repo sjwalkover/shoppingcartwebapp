@@ -12,6 +12,5 @@ export class Product {
     this.price = price;
     this.description = desc;
     this.imagePath = imagePath;
-
   }
 }
